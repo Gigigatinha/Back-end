@@ -53,7 +53,7 @@ public class Recuperacao {
 
         // Área de resultado
         JTextArea resultado = new JTextArea();
-        resultado.setBounds(20, 200, 230, 70);
+        resultado.setBounds(20, 200, 230, 90);
         tela.add(resultado);
 
         // Ação do botão cadastrar
@@ -98,11 +98,14 @@ public class Recuperacao {
                 // Mostrando resultado
                 else {
 
+                    int total = 100;
+
                     resultado.setText(
                             "Produto cadastrado com sucesso!" +
                             "\nProduto: " + nomeProduto +
                                     "\nPreço: " + precoValor +
-                                    "\nQuantidade: " + quantidadeValor
+                                    "\nQuantidade: " + quantidadeValor +
+                                    "\nValor total em estoque: " + total
                     );
 
                 }
