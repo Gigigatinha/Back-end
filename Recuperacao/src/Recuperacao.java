@@ -5,56 +5,56 @@ public class Recuperacao {
     public static void main(String[] args) {
 
         // Criando a tela
-        JFrame tela = new JFrame();
+        JFrame janela = new JFrame();
 
-        tela.setTitle("Cadastro de Produto");
-        tela.setSize(300, 300);
-        tela.setLayout(null);
+        janela.setTitle("Cadastro de Produto");
+        janela.setSize(300, 300);
+        janela.setLayout(null);
 
         // Texto Nome
         JLabel nome = new JLabel("Nome:");
         nome.setBounds(20, 20, 100, 20);
-        tela.add(nome);
+        janela.add(nome);
 
         // Campo Nome
         JTextField campoNome = new JTextField();
         campoNome.setBounds(100, 20, 150, 20);
-        tela.add(campoNome);
+        janela.add(campoNome);
 
         // Texto Preço
         JLabel preco = new JLabel("Preço:");
         preco.setBounds(20, 60, 100, 20);
-        tela.add(preco);
+        janela.add(preco);
 
         // Campo Preço
         JTextField campoPreco = new JTextField();
         campoPreco.setBounds(100, 60, 150, 20);
-        tela.add(campoPreco);
+        janela.add(campoPreco);
 
         // Texto Quantidade
         JLabel quantidade = new JLabel("Quantidade:");
         quantidade.setBounds(20, 100, 100, 20);
-        tela.add(quantidade);
+        janela.add(quantidade);
 
         // Campo Quantidade
         JTextField campoQuantidade = new JTextField();
         campoQuantidade.setBounds(100, 100, 150, 20);
-        tela.add(campoQuantidade);
+        janela.add(campoQuantidade);
 
         // Botão cadastrar
         JButton cadastrar = new JButton("Cadastrar");
         cadastrar.setBounds(20, 150, 110, 30);
-        tela.add(cadastrar);
+        janela.add(cadastrar);
 
         // Botão limpar
         JButton limpar = new JButton("Limpar");
         limpar.setBounds(140, 150, 110, 30);
-        tela.add(limpar);
+        janela.add(limpar);
 
         // Área de resultado
         JTextArea resultado = new JTextArea();
         resultado.setBounds(20, 200, 230, 90);
-        tela.add(resultado);
+        janela.add(resultado);
 
         // Ação do botão cadastrar
         cadastrar.addActionListener(e -> {
@@ -124,7 +124,7 @@ public class Recuperacao {
         });
 
         // Deixando a tela visível
-        tela.setVisible(true);
-        
+        janela.setVisible(true);
+
     }
 }
