@@ -125,8 +125,6 @@ public class Recuperacao {
 
         // Deixando a tela visível
         tela.setVisible(true);
-
-        // Exibir mensagem
-        resultado.setText("Produto cadastrado com sucesso!");
+        
     }
 }
